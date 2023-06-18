@@ -1,0 +1,558 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.background {
+    background-image: url(/src/main/resources/static/images/fondofutbol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backgroundInicio{
+    background-image: url(/src/main/resources/static/images/fondoequipos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.foreground-content{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 70%;
+
+}
+
+header {
+    background-color: #CBA2C9     ;
+    color: #000000;
+    padding: 20px;
+    top: 0%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 97,5%;
+    
+    
+}
+
+header .header-right{
+    display: flex;
+    align-items: center;
+}
+
+header .login-button{
+    background-color: #fff;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+
+}
+
+.footer{
+    background-color: #CBA2C9     ;
+    color: #000000;
+    height: 15%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.footer-logo{
+    width: 100px;
+    height: auto;
+    margin-top: 1%;
+}
+
+.login-form {
+    background-color: #CBA2C9;
+    padding: 20px;
+    border-radius: 15%;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 78% ;
+    margin-top: 6%;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #000000;
+    margin-left: 100%;
+    margin-top: 20%;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    padding: 1%;
+    border-radius: 25%;
+    display: flex;
+    margin-left: -100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.box a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.box h2{
+    justify-content: center;
+
+    font-size: 20px;
+    padding: 40%;
+
+}
+
+.containerEquipos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: -20%;
+}
+
+.team-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-box{
+    width: 200px;
+    height: 200px;
+    background-color: #CBA2C9;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-box h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenedorDetallesEquipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: -50%;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.detalle-equipo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.detalle-equipo-info {
+    flex: 1;
+}
+
+.detalle-equipo-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalle-equipo-imagen {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: -300%;
+}
+
+.detalle-equipo-imagen img {
+    width: 200px;
+    height: auto;
+    padding-right: -100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.persona-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.nombre,
+.numero {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lista-tecnicos-items,
+.lista-jugadores-items {
+    display: flex;
+}
+
+.tecnico-item,
+.jugador-item {
+    flex: 0 0 200px;
+    margin-right: 10px;
+}
+
+.listas{
+    margin-left: -100%;
+}
+
+
+
+
+.jugadores-panel {
+    width: 70%;
+    padding: 10px;
+    margin-left: -50%;
+}
+
+.jugadores-panel h2 {
+    margin-bottom: 10px;
+    color: #CBA2C9;
+}
+
+.jugadores-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.jugadores-panel2 {
+    width: 20%;
+    padding-left: 92%;
+}
+
+.jugadores-panel2 h2 {
+    margin-bottom: 10px;
+    color: #CBA2C9;
+}
+
+.jugadores-panel2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.opciones-panel {
+    margin-left: 100%;
+    padding-top: 3%;;
+    margin-left: 20%;
+    width: -25%;
+}
+
+.opciones-panel h2 {
+    margin-bottom: 10px;
+}
+
+.opciones-panel button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opciones-panel2{
+    width: 60%;
+    padding-left: 67%;
+    justify-content: center;
+    padding-top: 3%;
+
+}
+.opciones-panel2 h2 {
+    margin-bottom: 10px;
+    justify-content: center;
+
+}
+
+.opciones-panel2 button {
+    display: block;
+    width: 100%;
+    justify-content: center;
+
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.new-form {
+    background-color: #CBA2C9;
+  
+    border-radius: 15%;
+    height: 450px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 36% ;
+    margin-top: 1%;
+}
+
+.new-form h2 {
+    margin-bottom: 10px;
+}
+
+.new-form form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.new-form label {
+    margin-bottom: 10px;
+}
+
+.new-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.new-form button {
+    padding: 10px ;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 27%;
+}
+
+.registration-successful {
+    background-color: #CBA2C9;
+    padding: 20px;
+    border-radius: 15%;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 78%;
+    margin-top: 17%;
+}
+
+.registration-successful h2 {
+    margin-bottom: 20px;
+}
+
+.registration-successful p {
+    margin-bottom: 10px;
+}
+
+.registration-successful ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.registration-successful li {
+    margin-bottom: 10px;
+}
+
+.registration-successful strong {
+    font-weight: bold;
+}
+
+.form-new-equipo {
+    background-color: #CBA2C9;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 15%;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    margin-left: 70%;
+
+    text-align: center;
+}
+
+.form-new-equipo h2 {
+    margin-bottom: 5px;
+}
+
+.form-new-equipo form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-new-equipo label {
+    margin-bottom: 5px;
+}
+
+.form-new-equipo input {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.form-new-equipo button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-form {
+    background-color: #CBA2C9;
+    padding: 20px;
+    border-radius: 15%;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 77% ;
+    margin-top: 3%;
+}
+
+.search-form h2 {
+    margin-bottom: 20px;
+}
+
+.search-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form label {
+    margin-bottom: 10px;
+}
+
+.search-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.search-form2 {
+    background-color: #CBA2C9;
+    padding: 20px;
+    border-radius: 15%;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left:40% ;
+    margin-top: 3%;
+}
+
+
+
+.search-form2 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form2 label {
+    margin-bottom: 10px;
+}
+
+.search-form2 input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.search-form2 button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

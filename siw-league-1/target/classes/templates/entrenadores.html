@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Licencias entrenadores</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+
+    
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+            </div>
+        </header>
+
+
+
+        <div class="opciones-panel"></div>
+            <a href="/src/main/resources/templates/formSearchPersona.html"><button>Buscar</button></a>
+
+            <a href="/src/main/resources/templates/jugadores.html"><button>Ver jugadores</button></a>
+
+            <a href="/src/main/resources/templates/tecnicos.html"><button>Ver tecnicos</button></a>
+            
+            <a href="/src/main/resources/templates/presidentes.html"><button>Ver presidentes</button></a>
+        </div>
+
+        <div class="jugadores-panel">
+                <ul>
+                    <th:block th:each="entrenador: ${entrenadores}">
+                        <li th:text="${entrenador.nombre}"></li>
+                    </th:block>
+                </ul>
+        </div>
+        
+
+
+        
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+</body>
+</html>

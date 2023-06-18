@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Equipo</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+
+    
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+
+            </div>
+        </header>
+
+<di class="detalle-equipo">
+    <div class="detalle-equipo-info">
+        <h2>Detalles del equipo</h2>
+
+
+        <div th:if="${#request.isUserInRole('ADMIN_ROLE')}">
+            <a href="/src/main/resources/templates/formModificarEquipo.html" class="btn btn-primary">Modificar</a>
+
+
+        </div>
+        <p></p>
+        <p></p>
+
+        <p><strong>Nombre:</strong> ${equipo.nombre}</p>
+        <p></p>
+        <p></p>
+
+        <p><strong>Sigla:</strong> ${equipo.sigla}</p>
+        <p></p>
+        <p></p>
+
+        <p><strong>Presupuesto:</strong> ${equipo.presupuesto}</p>
+        <p></p>
+        <p></p>
+        <p><strong>Entrenador:</strong> ${equipo.entrenador}</p>
+        <p></p>
+        <p></p>
+        <p><strong>Ciudad:</strong> ${equipo.ciudad}</p>
+        <p></p>
+        <p></p>
+
+        <p><strong>Año de Fundación:</strong> ${equipo.añoFundacion}</p>
+        <p></p>
+        <p></p>
+
+        <p><strong>Estadio:</strong> ${equipo.estadio}</p>
+    </div>
+    
+    <div class="detalle-equipo-imagenes">
+        <div class="detalle-equipo-imagen">
+            <img src="/ruta/imagen-presidente.jpg" alt="Presidente">
+            <p>Foto del presidente</p>
+        </div>
+        <p></p>
+        <div class="detalle-equipo-imagen">
+            <img src="/ruta/imagen-equipo.jpg" alt="Escudo del equipo">
+            <p>Foto del escudo del equipo</p>
+        </div>
+    </div>
+
+    
+
+    <div class="lista-tecnicos">
+        <h2>Técnicos</h2>
+        <div class="scroll-horizontal">
+            <div class="lista-tecnicos-items">
+                <c:forEach items="${equipo.listaTecnicos}" var="tecnico">
+                    <div class="persona-item tecnico-item" style="background-image: url(${tecnico.foto});">
+                        <p class="nombre">${tecnico.nombre}</p>
+                        <p class="numero">${tecnico.numero}</p>
+                    </div>
+                </c:forEach>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lista-jugadores">
+        <h2>Jugadores</h2>
+        <div class="scroll-horizontal">
+            <div class="lista-jugadores-items">
+                <c:forEach items="${equipo.listaJugadores}" var="jugador">
+                    <div class="persona-item jugador-item" style="background-image: url(${jugador.foto});">
+                        <p class="nombre">${jugador.nombre}</p>
+                        <p class="numero">${jugador.numero}</p>
+                    </div>
+                </c:forEach>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+                    
+
+
+            
+
+
+
+
+
+
+
+
+        
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+</body>
+</html>
