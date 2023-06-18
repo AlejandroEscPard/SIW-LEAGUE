@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registro Exitoso</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+
+    
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+            </div>
+        </header>
+        <div class="foreground-content">
+
+            <div class="registration-successful">
+                <h2>Registro Exitoso</h2>
+                <p>Tu registro ha tenido exito, estos son tus datos:</p>
+
+                <ul>
+                    <li><strong>Nombre:</strong></li><span th:text="${user.nombre}"></span>
+                    <li><strong>Apellido:</strong></li><span th:text="${user.cognombre}"></span>
+                    <li><strong>Email:</strong></li><span th:text="${user.email}"></span>
+                    <li><strong>Username:</strong></li><span th:text="${credentials.username}"></span>
+
+                </ul>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear Tecnico</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+            </div>
+        </header>
+
+        
+<div class="new-form">
+        <div class="form-container">
+            <h1>Crear Tecnico</h1>
+            <form action="/entrenadores" method="post" class="form">
+                <div class="form-group">
+                    <label for="nome">Nombre:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cognome">Cognombre:</label>
+                    <input type="text" id="cognome" name="cognome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eta">Edad:</label>
+                    <input type="text" id="eta" name="eta" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nacionality">Nacionalidad:</label>
+                    <input type="text" id="nacioonality" name="nacionality" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="añosexperiencia">Años de experiencia:</label>
+                    <input type="text" id="añosexperiencia" name="añosexperiencia" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="licencia">Licencia:</label>
+                    <input type="text" id="licencia" name="licencia" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="equipo">Equipo:</label>
+                    <input type="text" id="equipo" name="equipo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha de inicio:</label>
+                    <input type="text" id="fechaInicio" name="fechaInicio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaFin">Fecha final:</label>
+                    <input type="text" id="fechaFinal" name="fechaFinal" required>
+                </div>
+
+                <button type="submit" class="submit-button">Guardar</button>
+            </form>
+
+        </div>
+    </div>
+
+        
+        
+
+
+
+
+        
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+    </body>
+</html>

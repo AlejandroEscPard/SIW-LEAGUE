@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+            </div>
+        </header>
+
+        <div class="foreground-content">
+
+
+        	<div class="opciones-panel2" >
+
+				<form action"/formSearchPersonaAñosExperiencia" method="GET">
+					<label for="experiencia"> Buscar por años de Experiencia: </label>
+					<input type="number" id="añosexperiencia" name="añosexperiencia">
+					<button type="submit"> Buscar</button>
+					
+					
+				</form>
+				<form action"/formSearchPersonaPosicion" method="GET">
+					<label for="posicion"> Buscar por posicion: </label>
+					<input type="text" id="posicion" name="posicion">
+					<button type="submit"> Buscar</button>
+					
+					
+				</form>
+            </div>
+				<div class="jugadores-panel2">
+					<h2>Resultado</h2>
+					<ul>
+						<th:block th:each="jugador: ${jugadores}">
+							<li th:text="${jugador.nombre}"></li>
+						</th:block>
+						
+					</ul>
+				</div>
+
+
+
+
+
+        </div>
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+    </body>
+</html>

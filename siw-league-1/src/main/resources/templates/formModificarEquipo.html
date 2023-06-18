@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear Entrenador</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+            </div>
+        </header>
+        <div class="search-form2">
+        <form action="/admin/cambiarPresupuesto" method="post" >
+            <label for="presupuesto" >Nuevo presupuesto:</label>
+            <input type="number" id="presupuesto" name="presupuesto" required>
+            <button type="submit">Guardar</button>
+        </form>
+</div>
+<div class="search-form2">
+        
+        <form action="/admin/cambiarAñoFundacion" method="post" >
+            <label for="presidente" >Nuevo presidente:</label>
+            <input type="text" id="presidente" name="presidente" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+
+
+        
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+    </body>
+</html>

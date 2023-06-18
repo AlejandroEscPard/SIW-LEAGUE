@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear Jugador</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+            </div>
+        </header>
+
+        
+        <div class="foreground-content">
+            <div class="form-new-equipo">
+                <h2>Crear Nuevo Equipo</h2>
+                <form action="/guardarEquipo" method="post">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                
+                    <label for="sigla">Sigla:</label>
+                    <input type="text" id="sigla" name="sigla" required>
+
+                    <label for="presupuesto">Presupuesto:</label>
+                    <input type="text" id="presupuesto" name="presupuesto" required>
+
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+
+                    <label for="añoFundacion">Año de fundacion:</label>
+                    <input type="text" id="añoFundacion" name="añoFundacion" required>
+
+                    <label for="stadio">Estadio:</label>
+                    <input type="text" id="stadio" name="stadio" required>
+
+                    <label for="añoFundacion">Año de fundacion:</label>
+                    <input type="text" id="añoFundacion" name="añoFundacion" required>
+                    
+                    <button type="submit">Guardar</button>
+                </form>
+
+
+
+
+
+
+            </div>
+
+      
+         </div>
+
+        
+        
+
+
+
+
+        
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+    </body>
+</html>

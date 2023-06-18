@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        </title>
+        <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+        
+    </head>
+    <body class="backgroundInicio">
+        <header class="header">
+            <div>
+                <a href="/src/main/resources/templates/index.html"><h1>Sistemi Informativi su Web SIW</h1></a>
+            </div>
+            <div class="header-right">
+
+                <a class="login-button" href="/src/main/resources/templates/formLogin.html">Log In</a>
+
+            </div>
+        </header>
+
+        <div class="foreground-content">
+
+            <div class="search-form">
+                <h2>Buscar Equipo por Sigla</h2>
+                <form action="/searchEquipoBySigla" method="GET">
+
+                    <label for="sigla">Sigla</label>
+                    <input type="text" id="sigla" name="sigla" required>
+                    <button type="submit">Buscar</button>
+
+                </form>
+            </div>
+
+
+            <div class="search-form">
+                <h2>Buscar Equipo por Presupuesto Mayor</h2>
+                <form action="/searchEquipoByPresupuesto" method="GET">
+
+                    <label for="presupuesto">Presupuesto</label>
+                    <input type="number" id="presupuesto" name="presupuesto" required>
+                    <button type="submit">Buscar</button>
+
+                </form>
+
+            </div>
+
+
+
+        </div>
+        <footer class="footer">
+            <img src="/src/main/resources/static/images/logo-romatre.jpg" alt="Logo Roma Tre" class="footer-logo">
+            <p>Todos los derechos reservado &copy 2023</p>
+
+        </footer>
+
+    </body>
+</html>
